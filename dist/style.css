@@ -1,0 +1,47 @@
+body {
+  color : #ffffff;
+}
+#pen-description {
+  font-size : xxx-large;
+  text-align : center;
+  font-family: 'Pacifico', cursive;
+}
+#app-container { 
+  font-family: 'Abril Fatface', cursive;
+  display : flex;
+  flex-direction :column;
+  flex : 1;
+  margin-left:auto;
+  margin-right:auto;
+  justify-content : center;
+  max-width : 40%;
+  align-items : center;
+  border : 1px solid #90A4AE;
+  border-radius : 10px;
+  font-size : x-large;
+}
+
+#grid-container {
+  display : grid;
+  grid-gap : 10px;
+  grid-template-columns : auto auto;
+  grid-template-rows :  auto auto auto auto;
+}
+#city-grid {
+  grid-column-start : 1;
+  grid-row-start : 1;
+}
+#city {
+  grid-column-start : 2;
+  grid-row-start : 1;
+}
+
+@media only screen and (max-width : 700px) {
+  #pen-description {
+    font-size : large;
+  }
+  #app-container {
+    border : none;
+    font-size : medium;
+  }
+}
